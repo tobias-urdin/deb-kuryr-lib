@@ -1,0 +1,16 @@
+#!/bin/sh -e
+
+if [ "$1" = "configure" ]; then
+   if ! getent group kuryr > /dev/null 2>&1; then
+       addgroup --system kuryr >/dev/null
+   fi
+
+   if ! getent passwd kuryr > /dev/null 2>&1; then
+       adduser --system --home /var/lib/kuryr --ingroup kuryr --no-create-home --shell /bin/false kuryr
+   fi
+
+   chown -R kuryr:kuryr /var/log/kuryr
+   chmod 0750 /var/log/kuryr
+   chown -R kuryr:kuryr /var/lib/kuryr /etc/kuryr
+fi
+#DEBHELPER#

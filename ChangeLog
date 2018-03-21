@@ -1,0 +1,435 @@
+CHANGES
+=======
+
+0.7.0
+-----
+
+* Allow multiple binding drivers
+* Introduce a SR-IOV binding driver
+* Updated from global requirements
+
+0.6.0
+-----
+
+* Updated from global requirements
+* Update the documentation link for doc migration
+
+0.5.0
+-----
+
+* Updated from global requirements
+* Drop MANIFEST.in - it's not needed by pbr
+* Updated from global requirements
+* Use openstackdocstheme over oslosphinx
+* Add Apache License Content in index.rst
+* Add compatibility for pyroute2>=0.4.15
+* Updated from global requirements
+* Replace http with https
+* Remove subunit-trace fork
+* Updated from global requirements
+* Remove log translations
+* Updated from global requirements
+
+0.4.0
+-----
+
+* Add unit tests for nested binding driver
+* [Fix gate]Update test requirement
+* Pass located tests directory in oslo debug
+* Add unit test for veth binding driver
+* Delete and move outdated docs
+* Updated from global requirements
+* E128 ignore statement make code unclearly
+* Change DEVICE\_OWNER to make it more Neutron compliant
+* Remove support for py34
+* Update the libnetwork devref
+* Add randomness to the returned vlan\_ids
+* Make segmentation driver testable
+* Updated from global requirements
+* Updated from global requirements
+
+0.3.0
+-----
+
+* Refactor out keystoneauth code from neutron
+* Avoid hard-coding of 'neutron' config group
+* Removes unnecessary utf-8 encoding
+* Add the missing AddressInUseException
+* Updated from global requirements
+* Passing port's project\_id in port\_bind
+* Fix mock order
+* mac and mtu is not configured in macvlan and ipvlan driver
+* Delete deprecated Hacking in tox.ini
+
+0.2.0
+-----
+
+* Nested-Containers: vlan driver
+* Show team and repo badges on README
+* Fix wrong exception catch in port\_unbind
+* Fix container port ipaddress setting in ipvlan/macvlan drivers
+* [docs] Libnetwork remote driver missing a step
+* Bump tox min version to 2.3.1
+* Replaces uuid.uuid4 with uuidutils.generate\_uuid()
+* [doc] Simple doc fix to add some missing styling
+* Updated from global requirements
+* Base busybox container for tests
+* Links do not point to any document
+* Fixed Warning while executing 'tox -e docs'
+* kuryr bind port error with neutron linux bridge driver
+* Add cover produced after coverage run in .gitignore
+* Update message as per i18n
+* 'IPDB' object has no attribute 'interface' in utils.remove\_device
+* return key error when start container with kuryr binding veth driver
+* Add reno support to kuryr
+* All kuryr-lib CI failed since kuryr-lib add in upper-constraints.txt
+* binding: use cached interface info
+* Replace link\_remove with link delete
+* binding: Add driver based subsystem
+* Remove redundant 'limitations' section
+* tox: fix coverage call
+* tox: Install like other OpenStack projects
+* Add ExportPortFailure exception
+* Add 'deployment\_type' configuration parameter
+* Remove kuryr-libnetwork constants from kuryr-lib
+* opts: add missing auth options
+* move to ipaddress
+
+0.1.0
+-----
+
+* auth: use keystoneauth1 for neutron access
+* Rephrase "networking basis" in watcher devref
+* Remove unused docker-py in test-requirements.txt
+* requirements: add missing oslo i18n dep in order
+* Remove pep8 exclusion for VMware in Kuryr
+* Drop unused requirements
+* Avoid registration of config parameters
+* Fix rst format for nested\_containers document
+* Add UT for update MTU in port binding
+* wheel: build universal wheels
+* fix python packaging
+* Set up MTU docker interface
+* Fix typo in the file
+* Updated from global requirements
+* Enable DeprecationWarning in test environments
+* Recover two files permissions
+* Add UT for kuryr/lib/opts.py
+* Update Kuryr dev docs
+* Remove all bytcode before running tox
+* Update info in the configuration file
+* Add more ut for kuryr/lib/utils.py
+* Use a simple file globbing syntax for installing entire directory
+* Remove rally-jobs/startup scripts/config in kuryr These code should be in kuryr-libnetwork/kuryr-k8s now
+* Updated from global requirements
+* Remove contrib/devstack/docker code in kuryr
+* Remove libnetwork specific config parameters
+* Fix typos
+* Refactoring: Drop all the code except common one
+* Add Python 3.5 classifier and venv
+* Usage is /Plugin.Active --> /Plugin.Activate
+* Update kuryr developer readme
+* Fix one spelling mistake
+* Updated from global requirements
+* Update README regarding overlapping cidr limitation
+* Short-Term fix for overlapping cidrs using docker options
+* Add vikasc to nested container spec assignees
+* Waiting for Neutron port to become ACTIVE
+* contrib/vagrant: fix env vars type conversion
+* Rename spec directory to newton
+* Remove mox from test\_config.py
+* Add existed network failed if the gateway already created
+* Correct some misspell words in Kuryr
+* Add container connect/disconnect tests to fullstack gate job
+* requirements: upgrade to latest pyroute2
+* Add default subnetpools to configuration
+* Add meaningful default address-space names
+* Updated from global requirements
+* Fix .rst format in kuryr\_k8s\_integration.rst
+* Releasing address for the gateway address
+* Fix typos in the watcher desing devref
+* Fixes problem with flask 0.11
+* Fix style issues in existing-neutron-network spec
+* Add the description of the Endpoints
+* Update index.rst for watcher devref
+* Move the description of the pool member creation
+* Eliminate unecessary ", or" in watcher design devref
+* Fix the link to K8s integration doc
+* Fix ReadMe for config file generation info
+* [TryFix] Fix fullstack test error Use kuryr ipam driver in fullstack test
+* Using LOG.warning instead of LOG.warn
+* Kuryr did not detect neutron tag plugin in devstack
+* Updated from global requirements
+*  Miss oslo common option in kuryr config file
+* Unify log format
+* Fix run docker error on the network with host route
+* Docker can create network with tag neutron.net.name/neutron.net.uuid. When the tag with a wrong value, for example, wrong uuid or name, Kuryr should return error
+* Do not attempt to re-install docker, regardless of its running status
+* Fix the style of Raven devref
+* Remove log\_level as kuryr is using oslo\_log now
+* Add proper space in error log message
+* Remove app.debug as we do not use it any more
+* Trivial doc fixes
+* startup: Fix Kuryr initialization
+* Check vif\_type if supported in kuryr
+* Makes tap device name consistent
+* [Tryfix] Increase the default RAM in vagrantfile
+* Install new 'tap' driver file
+* Updated from global requirements
+* Improve documentation
+* Change default scope to local in code comments
+* Adding support for two new libnetwork methods
+* containerization: Add dockerfile
+* Eliminate duplicate logic to generate ID's for tests
+* Add missing files to the install script
+* Revise Vagrant install readme notes estimated run time
+* Enable the change of docker-engine and etcd listen TCP port in devstack
+* Adding support for OVS Hybrid binding
+* Shrink logo size
+* Add support for VIF\_TYPE\_TAP
+* Switch to using hacking checks from neutron-lib
+* Activate libnetwork plugin with .spec instead of .json
+* Add devref of Raven
+* Makes use of Neutron tags optional
+* Adds support fot IpamDriver.GetCapabilities
+* Vagrant: Allow running the "docker" command as the vagrant user
+* README.md: Cleanup documentation
+* Fix ovs creation of the port
+* Modify run\_kuryr.sh to accepts arguments
+* Add oslo.log and use its config options by default
+* Make logging level configurable
+* Fix pyroute2 exceptions import
+* Updated from global requirements
+* Fix warning for docs generation
+* Fix wrong example in existing-neutron-network.rst
+* Updated from global requirements
+* Add notice to remind user to install tox
+* Fix pep8 errors
+* Fix some link problem in existing-neutron-network.rst
+* Fix typos in Kuryr files
+* Add spec of blueprint existing-neutron-network
+* Support for existing Neutron nets
+* Add specificaton for kubernetes integration
+* Using Neutron Tags
+* Only install docker in case it is not installed
+* Noted other requirements for generating documentation
+* Make IPDB and IPRoute calls indirect
+* Add rally case for create and delete network
+* Update the Running Kuryr part doc
+* Modify run\_kuryr.sh for more clear output
+* Networking for nested containers
+* Add PLUMgrid/IOvisor binding for Kuryr
+* Expose additional vif params to bind/unbind scripts
+* Updated from global requirements
+* Expose horizon on Vagrant guest to localhost port 8080
+* plugin.sh stops docker service rather than kill docker daemon
+* Virtualbox now uses 'ubuntu/trusty64' instead of 'trusty'
+* Updated from global requirements
+* Renaming service from docker-engine to docker to fix 'vagrant up'
+* Add binding script for LB
+* Add the kuryr plugin for rally
+* Remove tox from requirements
+* Adds config options for using SSL
+* Add upstart config file
+* Make use of one instance of IPDB
+* Modify external\_ids in /usr/libexec/kuryr/ovs
+* Wrap public strings with i18n
+* make scope retrievable from env vars
+* Remove support for Python 3.3
+* devstack: Workaround shebang insanities
+* The device\_id and device\_owner of neutron port are null
+* Try to fix gate-install-dsvm-kuryr error. gate-install-dsvm-kuryr is failed since yesterday afternoon in all kuryr patch
+* Use uppercase 'S' in word "OpenStack"
+* Fix misspellings
+* Check the return net list before deleting
+* requirements: neutronclient subnetpool support
+* requirements: add missing os-client-config
+* Fix invalid url
+* Support py34 in Kuryr
+* Adjust underline length and change default scope to local
+* Revert "Use assertTrue/False instead of assertEqual(T/F)"
+* config: Default "enable\_dhcp" to True
+* Add "sudo" to the instruction for running Kuryr
+* Add report to coverage
+* Remove 'MANIFEST.in'
+* Fix term inside the spec
+* Fixed typo in README.rst
+* Change i18n to \_i18n
+* Fix missing tox in the requirement file
+* remove unused variable
+* /NetworkDriver.CreateNetwork: Handle 'Gateway' parameter properly
+* Update the invalid URL
+* Fix /NetworkDriver.CreateNetwork validation
+* Add debug testenv in tox
+* Clean up removed hacking rule from [flake8] ignore lists
+* Fix wrong checking code
+* Fix /NetworkDriver.CreateEndpoint, port updation API not working
+* Missing host name when creating port
+* Add description about the IPAM to devref
+* Add check to handle case when --gateway not given
+* Use assertTrue/False instead of assertEqual(T/F)
+* Use dhcp\_enable config option
+* Code refactoring: /NetworkDriver.DeleteNetwork & /NetworkDriver.DeleteEndpoint
+* Fix docker-py lib version from 1.4.0+ to 1.5.0+
+* Update the help str of keystone opts
+* Change capability\_scope default value to local
+* Add Makefile to generate the doc, and add steps into README
+* Add Kuryr network creation/deletion tests
+* Change url from http to https in local.conf.sample
+* Add debug flag in the config
+* Remove openstack-common.conf from Kuryr
+* /NetworkDriver.CreateEndpoint cleanup
+* Allow for user specified local.conf changes with Vagrant
+* Create Neutron client from cloud credentials
+* Create subnets in /NetworkDriver.CreateNetwork using IPv4Data and IPv6Data
+* Configure Docker engine to listen to TCP port
+* Address comments regarding test hook scripts
+* Change generator config file from tox to oslo-config-generator
+* remove python 2.6 trove classifier
+* Let kuryr server start using port from config
+* Make ./stack.sh optional
+* Fix the unbind\_port method in libexec of ovs
+* Add Docker pluggable IPAM implementation to Kuryr
+* Make the script run on RedHat-like OS
+* Create Kuryr subnet pool in the devstack process
+* Keep the same format with other usage: capitalize the head letter
+* Allow rpm-based machines
+* Cosmetic and configurable changes on Vagranfile
+* Let all version info be read from the setup.cfg
+* Adding version for neutronclient
+* Add neutron client to base fullstack test
+* Delete etcd DB data every stack
+* Use reno for release notes
+* Add test hooks for Kuryr gate job
+* Add base class test for Kuryr fullstack testing
+* Make sure correct branch of Neutron is pulled on testing
+* Add rally integration point
+* Add kuryr auto generated conf files to gitignore
+* Add a unit test for /NetworkDriver.GetCapabilities
+* Add missing descriptions about tests for Discover APIs
+* Replace full-width quotes with half-width quotes
+* Separate unit tests from fullstack tests
+* Using direct kwargs instead of a dict creation/destroy
+* Adding plug/unplug for OVS
+* Completing the basic configuration for Kuryr
+* Replace hardcoded port name generation with function
+* Remove unnecessary constants
+* Fix typo in binding.py: Neutorn --> Neutron
+* Fix typo in error msg: happend --> happened
+* Fix unnecessary defined internal variable
+* Delete python bytecode before every test run
+* Fix H405 violations
+* Use assertIn and assertNotIn
+* Change ETCD version
+* Correct location of auto-generated config file
+* Add docker-py to requierments
+* vagrant: add support for the libvirt provider
+* Adding binding option to config auto generation
+* Add docstring for plugin\_activate
+* Add docstring for plugin\_scope
+* Adding support for Discovery calls
+* Fix docstring in network\_driver\_create\_network
+* Fix the inspected network info in devref
+* Fix Kuryr devstack plugin
+* Integrate devstack plugin with Vagrant setup
+* Add Kuryr devstack plugin
+* Remove AuxAddresses from the required properties
+* Fix the scope of Kuryr in the devref
+* Fix Kuryr icon size
+* Add Kuryr logo to documents
+* Cleanups to Vagrant documentation and scripts
+* Add IPv4Data and IPv6Data to the schema for the network
+* Refactor Vagrantfile to allow other providers
+* Modify unbound script executable
+* Create subnets with dhcp disabled
+* Check subnetpool extension support
+* Fix /NetworkDriver.CreateEndpoint validation
+* Fix /NetworkDriver.CreateEndpoint return value form
+* Configure "global" as default capability
+* Add specs directory to Kuryr
+* Fix one typo
+* Implement /NetworkDriver.Leave
+* Add the validation for /NetworkDriver.Leave
+* Implement /NetworkDriver.Join
+* Cleanup the Kuryr documentation
+* Add Kuryr Mitaka milestone spec
+* Use assertIn and assertNotIn
+* Update devref to catchup with libnetwork 0.5.0
+* Code refactoring: Remove redundant lines of code
+* Fix /NetworkDriver.Join api validation
+* Add device\_owner while creating neutron port
+* Update desc in /NetworkDriver.Join json schema
+* Update vagrant support to use docker 1.9.0 rather experimental
+* Add get\_neutron\_port\_name
+* Add a workaround for null Interface in /NetworkDriver.CreateEndpiont
+* Update Kuryr to catch up with libnetwork 0.5.0
+* Modify the maximum length of subnets contain the same EndpointID
+* Fix Kuryr to create the default subnets and return allocated CIDRs
+* Fix /NetworkDriver.CreateEndpoint to return allocated IP addreses
+* Fix /NetworkDriver.CreateEndpoint to handle the empty Interfaces
+* Modify Kuryr not to delete the default subnets
+* Remove allocation\_pools in the subnet request against Neutron
+* Add subnet mock staticmethods to TestKuryrBase for refactoring
+* Fix Kuryr check the length of networks and subnets correctly
+* Add files to enable demo kuryr setup using Vagrant
+* Fix a typo in an error message
+* Exclude tests from coverage
+* Modify KuryrException extend Exception appropriately
+* Add traceback error
+* Supports capabilities required by libnetwork
+* Allow empty Options for create netwok
+* Fix the command for service publishing
+* Add entry point for kuryr-server
+* Refactor kuryr/\_\_init\_\_.py not to use objects but modules
+* Remove unnecessary duplicated logic
+* Using config options
+* Move fake response generators to the base class
+* Add log message for unexpected errors
+* Fix subnet querying to use the subnet CIDR
+* Adding configurations for Kuryr
+* Activate pep8 check that \_ is imported
+* Refactor schemata not to import objects but modules
+* Refactor tests/test\_kuryr\_endpoint.py not to import objects but modules
+* Add the validation for /NetworkDriver.Join
+* Using Neutron directory organization
+* Add get\_sandbox\_key to utils.py
+* Refactor tests/test\_kuryr.py not to import objects but modules
+* Refactor tests/base.py not to import objects but modules
+* Refactor utils.py not to import objects but modules
+* Refactor controllers.py not to import objects but modules
+* Add the validation for /NetworkDriver.DeleteEndpoint
+* Add the validation for /NetworkDriver.CreateEndpint
+* Add the validation for /NetworkDriver.DeleteNetwork
+* Add the validation for /NetworkDriver.CreateNetwork
+* Implement /NetworkDriver.DeleteEndpoint
+* Implement /NetworkDriver.CreateEndpoint
+* Change the tear down mechanism for Kuryr tests
+* Add missing index to {} for logger
+* Wrap readme to 80 chars
+* Enable keystone password authentication
+* Stop unneeded cloning of Neutron during CI
+* Move \_mock\_out\_network to TestKuryrBase
+* Implement /NetworkDriver.DeleteNetwork
+* Refactor the test for /NetworkDriver.CreateNetwork
+* Add design and devref section in documentation
+* Removing unused dependency: discover
+* Implement /NetworkDriver.CreateNetwork
+* Modify class structures for tests
+* Update description about /NetworkDriver.EndpointOperInfo
+* Add JSON payload in the design doc
+* Add an initial design doc
+* Add python-neutronclient to the dependencies
+* Add basic tests for Kuryr
+* Add an instruction for tests
+* Delete duplicated test files
+* Add constants
+* Update README.rst
+* Add a script to start Kuryr
+* Add basic structures of libnetwork remote driver
+* Add entrypoint of Kuryr
+* Add Kuryr description to README
+* Add dependencies to requirements.txt
+* Fixed a tiny but silly typo
+* Add .gitignore file
+* Initial template commit
+* Added .gitreview

@@ -1,0 +1,3 @@
+[oslo.config.opts]
+kuryr = kuryr.lib.opts:list_kuryr_opts
+

@@ -1,0 +1,2 @@
+etc/kuryr.conf.sample etc/kuryr/kuryr.conf
+usr/lib/python*/dist-packages/*

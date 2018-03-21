@@ -1,0 +1,3 @@
+etc/kuryr
+var/lib/kuryr
+var/log/kuryr

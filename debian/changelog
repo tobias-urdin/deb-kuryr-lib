@@ -1,0 +1,5 @@
+kuryr-lib (0.7.0-1) xenial; urgency=medium
+
+  * Initial release.
+
+ -- Tobias Urdin <tobias@busybox.se>  Wed, 21 Mar 2018 15:34:49 +0100
